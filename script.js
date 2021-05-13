@@ -15,9 +15,9 @@ btnContainer.addEventListener("click", function () {
     Newsheet.innerText = `Sheet ${Lastidx + 2}`;
     sheetList.appendChild(Newsheet);
     for (let i = 0; i < AllSheets.length; i++) {
-        AllSheets[i].classList.remove("active");
+        AllSheets[i].classList.remove("active-btn");
     }
-    Newsheet.classList.add("active");
+    Newsheet.classList.add("active-btn");
     // new sheet create 
     Newsheet.addEventListener("click", makeMeActive)
 })
@@ -26,7 +26,7 @@ function makeMeActive(e) {
     let sheet = e.currentTarget;
     let AllSheets = document.querySelectorAll(".sheet");
     for (let i = 0; i < AllSheets.length; i++) {
-        AllSheets[i].classList.remove("active");
+        AllSheets[i].classList.remove("active-btn");
     }
-    sheet.classList.add("active");
+    sheet.classList.add("active-btn");
 }
