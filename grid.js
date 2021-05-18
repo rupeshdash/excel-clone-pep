@@ -7,6 +7,7 @@ let underlineBtn = document.querySelector(".underline");
 let addressInput = document.querySelector(".address-input");
 let alignBtns = document.querySelectorAll(".align-container>*");
 let fontSizeElem = document.querySelector(".font-size");
+let formulaBar = document.querySelector(".formula-input");
 let rows = 100;
 let cols = 26;
 
@@ -20,7 +21,10 @@ for (let i = 0; i < rows; i++) {
       underline: "none",
       hAlign: "center",
       fontFamily: "sans-serif",
-      fontSize : 16
+      fontSize : 16,
+      value: "",
+      formula: "",
+      children: []
     };
 
     row.push(cell);
